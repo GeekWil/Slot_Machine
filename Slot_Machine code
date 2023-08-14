@@ -155,3 +155,10 @@ def main():
 
 
 main()
+
+
+
+# When betting the lines, if only bet for three lines, only the top three lines will count (the bottom 2 lines will not count even you have same letter in a row)
+# This issue needs to be fix
+
+
