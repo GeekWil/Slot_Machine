@@ -36,10 +36,12 @@ def check_win(columns, lines, bet, values):
         else: #if all the columns are equal, then that mean the player win
             winning += values[symbol] * bet
             win_lines.append(line + 1)
+    
+    
     return winning, win_lines
 
 
-
+#5th
 def get_slot_machine_spin(rows, cols, symbols):
     all_symbols = []
     for symbol, symbol_count in symbols.items():
@@ -59,6 +61,7 @@ def get_slot_machine_spin(rows, cols, symbols):
     
     return columns
 
+#4th
 def print_slot_machine(columns):
     for row in range(len(columns[0])):
         for y, column in enumerate(columns):
@@ -69,6 +72,7 @@ def print_slot_machine(columns):
 
         print()
 
+#1st
 def deposit():
     while True:
         amount = input("How much would you like to deposit? $")
@@ -83,7 +87,7 @@ def deposit():
             print("Please enter a valid number.")
     return amount
 
-
+#2nd
 def get_num_lines():
     while True:
         lines = input(f"Enter the number of lines to bet on (1-{Max_lines})? ")
@@ -101,7 +105,7 @@ def get_num_lines():
             print("Please enter a valid number.")
     return lines
 
-
+#3rd
 def get_bet():
     while True:
         amount = input("How much would you like to bet on each line? $")
@@ -155,10 +159,3 @@ def main():
 
 
 main()
-
-
-
-# When betting the lines, if only bet for three lines, only the top three lines will count (the bottom 2 lines will not count even you have same letter in a row)
-# This issue needs to be fix
-
-
